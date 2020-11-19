@@ -3,15 +3,16 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		int[] array = {3,2,4};
+
+	}
+	public int[] twoSum(int[] nums, int target) {
+		
 		int[] answer = new int[2];
 		
-		int target = 6;
-		
-		for(int i = 0; i < array.length; i++) {
-			for(int j = 0; j < array.length; j++) {
+		for(int i = 0; i < nums.length; i++) {
+			for(int j = 0; j < nums.length; j++) {
 				if(i != j) {
-					if(array[i] + array[j] == target) {
+					if(nums[i] + nums[j] == target) {
 						answer[0] = j;
 						answer[1] = i;
 					}
@@ -20,11 +21,8 @@ public class Main {
 			}
 		}
 		
-		for(int i = 0; i < answer.length; i++) {
-			System.out.print(answer[i] + " ");
-		}
-
-}
+		return answer;
+	}
 	
 
 }
